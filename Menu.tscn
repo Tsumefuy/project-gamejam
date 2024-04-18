@@ -1,0 +1,79 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Fonts/FirstTimeWriting.ttf" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 60
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 36
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 36
+font_data = ExtResource( 2 )
+
+[node name="Menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -256.0
+margin_top = -156.0
+margin_right = 256.0
+margin_bottom = 144.0
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+margin_right = 512.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 0, 100 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "GAME NAME"
+align = 1
+valign = 1
+clip_text = true
+uppercase = true
+
+[node name="HContainer" type="VBoxContainer" parent="VBoxContainer"]
+margin_top = 104.0
+margin_right = 512.0
+margin_bottom = 226.0
+alignment = 1
+
+[node name="Opções" type="Button" parent="VBoxContainer/HContainer"]
+margin_right = 512.0
+margin_bottom = 70.0
+rect_min_size = Vector2( 0, 70 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_focus = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 3 )
+text = "Opções"
+flat = true
+
+[node name="Sair" type="Button" parent="VBoxContainer/HContainer"]
+margin_top = 74.0
+margin_right = 512.0
+margin_bottom = 122.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_focus = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 4 )
+text = "Sair"
+flat = true

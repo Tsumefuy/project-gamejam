@@ -21,5 +21,5 @@ func mouse_interaction(button: Button, state: String) -> void:
 		"mouse_exit":
 			button.modulate.a = 1.0
 		"mouse_enter":
-			button.modulate.a = 5.0
+			button.modulate.a = 7.0
 

@@ -1,7 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Assets/Fonts/FirstTimeWriting.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Scripts/Settings.gd" type="Script" id=2]
+[ext_resource path="res://Assets/Backgrounds/textura-de-papel-amassado_144627-17447.png" type="Texture" id=3]
+[ext_resource path="res://Scripts/resize-papel_amassado.gd" type="Script" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 size = 36
@@ -22,9 +24,15 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 2 )
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="Background" type="ColorRect" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
+
+[node name="Textura-de-papel-amassado144627-17447" type="Sprite" parent="Background"]
+position = Vector2( 512, 300 )
+scale = Vector2( 1.63578, 1.38249 )
+texture = ExtResource( 3 )
+script = ExtResource( 4 )
 
 [node name="MainContainer" type="VBoxContainer" parent="."]
 anchor_left = 0.5

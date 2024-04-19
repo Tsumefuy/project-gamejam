@@ -3,7 +3,7 @@
 [ext_resource path="res://Scripts/menu.gd" type="Script" id=1]
 [ext_resource path="res://Assets/logo/equipe_phoenix_logo.png" type="Texture" id=2]
 [ext_resource path="res://Assets/Fonts/FirstTimeWriting.ttf" type="DynamicFontData" id=3]
-[ext_resource path="res://textura-de-papel-amassado_144627-17447.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Backgrounds/textura-de-papel-amassado_144627-17447.png" type="Texture" id=4]
 [ext_resource path="res://Scripts/resize-papel_amassado.gd" type="Script" id=5]
 
 [sub_resource type="DynamicFont" id=1]

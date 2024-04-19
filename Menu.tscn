@@ -1,9 +1,13 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Fonts/FirstTimeWriting.ttf" type="DynamicFontData" id=2]
 
 [sub_resource type="DynamicFont" id=1]
 size = 60
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 36
 font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=3]
@@ -49,31 +53,50 @@ uppercase = true
 [node name="HContainer" type="VBoxContainer" parent="VBoxContainer"]
 margin_top = 104.0
 margin_right = 512.0
-margin_bottom = 226.0
+margin_bottom = 278.0
 alignment = 1
 
-[node name="Opções" type="Button" parent="VBoxContainer/HContainer"]
+[node name="Button" type="Button" parent="VBoxContainer/HContainer"]
 margin_right = 512.0
-margin_bottom = 70.0
+margin_bottom = 48.0
+focus_mode = 0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_focus = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 5 )
+enabled_focus_mode = 0
+text = "JOGAR"
+flat = true
+
+[node name="Opções" type="Button" parent="VBoxContainer/HContainer"]
+margin_top = 52.0
+margin_right = 512.0
+margin_bottom = 122.0
 rect_min_size = Vector2( 0, 70 )
+focus_mode = 0
 custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
 custom_colors/font_color_focus = Color( 0, 0, 0, 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
 custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 3 )
+enabled_focus_mode = 0
 text = "Opções"
 flat = true
 
 [node name="Sair" type="Button" parent="VBoxContainer/HContainer"]
-margin_top = 74.0
+margin_top = 126.0
 margin_right = 512.0
-margin_bottom = 122.0
+margin_bottom = 174.0
+focus_mode = 0
 custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
 custom_colors/font_color_focus = Color( 0, 0, 0, 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
 custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 4 )
+enabled_focus_mode = 0
 text = "Sair"
 flat = true

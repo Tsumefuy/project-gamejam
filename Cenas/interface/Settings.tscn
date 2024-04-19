@@ -3,7 +3,25 @@
 [ext_resource path="res://Assets/Fonts/FirstTimeWriting.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Scripts/Settings.gd" type="Script" id=2]
 [ext_resource path="res://Assets/Backgrounds/textura-de-papel-amassado_144627-17447.png" type="Texture" id=3]
-[ext_resource path="res://Scripts/resize-papel_amassado.gd" type="Script" id=4]
+
+[sub_resource type="GDScript" id=6]
+script/source = "extends Sprite
+
+
+# Declare member variables here. Examples:
+# var a = 2
+# var b = \"text\"
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+#func _process(delta):
+#	pass
+"
 
 [sub_resource type="DynamicFont" id=1]
 size = 36
@@ -32,7 +50,7 @@ anchor_bottom = 1.0
 position = Vector2( 512, 300 )
 scale = Vector2( 1.63578, 1.38249 )
 texture = ExtResource( 3 )
-script = ExtResource( 4 )
+script = SubResource( 6 )
 
 [node name="MainContainer" type="VBoxContainer" parent="."]
 anchor_left = 0.5

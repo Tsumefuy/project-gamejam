@@ -9,7 +9,7 @@ func _ready():
 func on_button_pressed(button: Button) -> void:
 	match button.name:
 		"JOGAR":
-			var _game: bool = true
+			var _game: bool = get_tree().change_scene("res://Cenas/Main.tscn")
 		"Opcoes":
 			var _settings: bool = get_tree().change_scene("res://Cenas/interface/Settings.tscn")
 		"Sair":

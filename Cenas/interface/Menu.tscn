@@ -1,8 +1,8 @@
 [gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Scripts/menu.gd" type="Script" id=1]
-[ext_resource path="res://Assets/logo/Design_sem_nome-removebg-preview(1).png" type="Texture" id=2]
-[ext_resource path="res://Assets/FirstTimeWriting.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Assets/logo/equipe_phoenix_logo.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Fonts/FirstTimeWriting.ttf" type="DynamicFontData" id=3]
 
 [sub_resource type="DynamicFont" id=1]
 size = 60
@@ -107,7 +107,8 @@ enabled_focus_mode = 0
 text = "Sair"
 flat = true
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="Logo" type="TextureRect" parent="."]
+modulate = Color( 0, 0, 0, 1 )
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5

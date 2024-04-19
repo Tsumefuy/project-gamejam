@@ -26,7 +26,7 @@ anchor_bottom = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
+[node name="MainContainer" type="VBoxContainer" parent="."]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -36,7 +36,7 @@ margin_top = -150.0
 margin_right = 256.0
 margin_bottom = 150.0
 
-[node name="Label" type="Label" parent="VBoxContainer"]
+[node name="GameName" type="Label" parent="MainContainer"]
 margin_right = 512.0
 margin_bottom = 100.0
 rect_min_size = Vector2( 0, 100 )
@@ -50,13 +50,13 @@ valign = 1
 clip_text = true
 uppercase = true
 
-[node name="HContainer" type="VBoxContainer" parent="VBoxContainer"]
+[node name="HContainer" type="VBoxContainer" parent="MainContainer"]
 margin_top = 104.0
 margin_right = 512.0
 margin_bottom = 278.0
 alignment = 1
 
-[node name="Button" type="Button" parent="VBoxContainer/HContainer"]
+[node name="JOGAR" type="Button" parent="MainContainer/HContainer"]
 margin_right = 512.0
 margin_bottom = 48.0
 focus_mode = 0
@@ -70,7 +70,7 @@ enabled_focus_mode = 0
 text = "JOGAR"
 flat = true
 
-[node name="Opções" type="Button" parent="VBoxContainer/HContainer"]
+[node name="Opções" type="Button" parent="MainContainer/HContainer"]
 margin_top = 52.0
 margin_right = 512.0
 margin_bottom = 122.0
@@ -86,7 +86,7 @@ enabled_focus_mode = 0
 text = "Opções"
 flat = true
 
-[node name="Sair" type="Button" parent="VBoxContainer/HContainer"]
+[node name="Sair" type="Button" parent="MainContainer/HContainer"]
 margin_top = 126.0
 margin_right = 512.0
 margin_bottom = 174.0

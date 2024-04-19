@@ -1,32 +1,26 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://Scripts/menu.gd" type="Script" id=1]
-[ext_resource path="res://Assets/logo/Design_sem_nome-removebg-preview(1).png" type="Texture" id=2]
-[ext_resource path="res://Assets/FirstTimeWriting.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Assets/FirstTimeWriting.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Cenas/interface/Settings.gd" type="Script" id=2]
 
 [sub_resource type="DynamicFont" id=1]
-size = 60
+size = 36
 outline_size = 1
 outline_color = Color( 0, 0, 0, 1 )
-font_data = ExtResource( 3 )
-
-[sub_resource type="DynamicFont" id=5]
-size = 36
-outline_color = Color( 0, 0, 0, 1 )
-font_data = ExtResource( 3 )
+font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=3]
 size = 36
-font_data = ExtResource( 3 )
+font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=4]
 size = 36
-font_data = ExtResource( 3 )
+font_data = ExtResource( 1 )
 
-[node name="Menu" type="Control"]
+[node name="Settings" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-script = ExtResource( 1 )
+script = ExtResource( 2 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
 anchor_right = 1.0
@@ -38,11 +32,11 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = -256.0
-margin_top = -139.0
+margin_top = -180.0
 margin_right = 256.0
-margin_bottom = 139.0
+margin_bottom = 180.0
 
-[node name="GameName" type="Label" parent="MainContainer"]
+[node name="Opcoes" type="Label" parent="MainContainer"]
 margin_right = 512.0
 margin_bottom = 100.0
 rect_min_size = Vector2( 0, 100 )
@@ -50,7 +44,7 @@ custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 1 )
-text = "GAME NAME"
+text = "--------- OPCÕES ---------"
 align = 1
 valign = 1
 clip_text = true
@@ -59,27 +53,12 @@ uppercase = true
 [node name="HContainer" type="VBoxContainer" parent="MainContainer"]
 margin_top = 104.0
 margin_right = 512.0
-margin_bottom = 278.0
+margin_bottom = 300.0
 alignment = 1
 
-[node name="JOGAR" type="Button" parent="MainContainer/HContainer" groups=["button"]]
+[node name="Som" type="Button" parent="MainContainer/HContainer" groups=["button"]]
 margin_right = 512.0
-margin_bottom = 48.0
-focus_mode = 0
-custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
-custom_colors/font_color_focus = Color( 0, 0, 0, 1 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
-custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
-custom_fonts/font = SubResource( 5 )
-enabled_focus_mode = 0
-text = "JOGAR"
-flat = true
-
-[node name="Opcoes" type="Button" parent="MainContainer/HContainer" groups=["button"]]
-margin_top = 52.0
-margin_right = 512.0
-margin_bottom = 122.0
+margin_bottom = 70.0
 rect_min_size = Vector2( 0, 70 )
 focus_mode = 0
 custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
@@ -89,13 +68,31 @@ custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
 custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 3 )
 enabled_focus_mode = 0
-text = "Opções"
+text = "Som"
 flat = true
+align = 0
 
-[node name="Sair" type="Button" parent="MainContainer/HContainer" groups=["button"]]
-margin_top = 126.0
+[node name="Dificuldade" type="Button" parent="MainContainer/HContainer" groups=["button"]]
+margin_top = 74.0
 margin_right = 512.0
-margin_bottom = 174.0
+margin_bottom = 144.0
+rect_min_size = Vector2( 0, 70 )
+focus_mode = 0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_focus = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 3 )
+enabled_focus_mode = 0
+text = "Dificuldade"
+flat = true
+align = 0
+
+[node name="Voltar" type="Button" parent="MainContainer/HContainer" groups=["button"]]
+margin_top = 148.0
+margin_right = 512.0
+margin_bottom = 196.0
 focus_mode = 0
 custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
 custom_colors/font_color_focus = Color( 0, 0, 0, 1 )
@@ -104,17 +101,5 @@ custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
 custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 4 )
 enabled_focus_mode = 0
-text = "Sair"
+text = "Voltar"
 flat = true
-
-[node name="TextureRect" type="TextureRect" parent="."]
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-margin_left = -53.0
-margin_top = -88.0
-margin_right = 53.0
-texture = ExtResource( 2 )
-expand = true
-stretch_mode = 6

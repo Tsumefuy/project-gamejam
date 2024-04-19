@@ -8,12 +8,12 @@ func _ready():
 
 func on_button_pressed(button: Button) -> void:
 	match button.name:
-		"JOGAR":
-			var _game: bool = true
-		"Opcoes":
-			var _settings: bool = get_tree().change_scene("res://Cenas/interface/Settings.tscn")
-		"Sair":
-			get_tree().quit()
+		"Som":
+			var _sound: bool = true
+		"Dificuldade":
+			var _difficult: bool = true
+		"Voltar":
+			var _back: bool = get_tree().change_scene("res://Cenas/interface/Menu.tscn")
 			
 
 func mouse_interaction(button: Button, state: String) -> void:
@@ -22,4 +22,3 @@ func mouse_interaction(button: Button, state: String) -> void:
 			button.modulate.a = 1.0
 		"mouse_enter":
 			button.modulate.a = 5.0
-

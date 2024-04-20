@@ -22,7 +22,7 @@ if (trasition)
 	{
 		draw_set_alpha(1);
 		audio_stop_sound(snd_soundtrack);
-		room_goto(tutorial);
+		room_goto(rm_tutorial);
 	}
-	else alpha -= 0.01;
+	else alpha -= 0.02;
 }

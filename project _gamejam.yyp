@@ -48,7 +48,7 @@
     {"id":{"name":"idle","path":"sprites/idle/idle.yy",},},
     {"id":{"name":"spr_logo","path":"sprites/spr_logo/spr_logo.yy",},},
     {"id":{"name":"Sprite2","path":"sprites/Sprite2/Sprite2.yy",},},
-    {"id":{"name":"spr_","path":"sprites/spr_/spr_.yy",},},
+    {"id":{"name":"spr_paperBlack","path":"sprites/spr_paperBlack/spr_paperBlack.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",

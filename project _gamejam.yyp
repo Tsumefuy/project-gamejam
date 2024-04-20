@@ -45,6 +45,8 @@
     {"id":{"name":"snd_menu","path":"sounds/snd_menu/snd_menu.yy",},},
     {"id":{"name":"snd_soundtrack","path":"sounds/snd_soundtrack/snd_soundtrack.yy",},},
     {"id":{"name":"spr_logo","path":"sprites/spr_logo/spr_logo.yy",},},
+    {"id":{"name":"Sprite2","path":"sprites/Sprite2/Sprite2.yy",},},
+    {"id":{"name":"Sprite3","path":"sprites/Sprite3/Sprite3.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",

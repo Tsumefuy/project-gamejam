@@ -21,6 +21,7 @@
     {"name":"spr_player","order":1,"path":"folders/Sprites/spr_player.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"Object3","order":2,"path":"objects/Object3/Object3.yy",},
     {"name":"context","order":1,"path":"rooms/context/context.yy",},
     {"name":"Room3","order":2,"path":"rooms/Room3/Room3.yy",},
     {"name":"snd_esc","order":1,"path":"sounds/snd_esc/snd_esc.yy",},

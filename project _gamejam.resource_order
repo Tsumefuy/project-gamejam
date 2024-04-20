@@ -18,6 +18,9 @@
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
     {"name":"spr_cenario","order":2,"path":"folders/Sprites/spr_cenario.yy",},
     {"name":"spr_player","order":1,"path":"folders/Sprites/spr_player.yy",},
+    {"name":"backgrounds","order":2,"path":"folders/Sprites/backgrounds.yy",},
+    {"name":"spr_menu","order":3,"path":"folders/Sprites/spr_menu.yy",},
+    {"name":"spr_player","order":1,"path":"folders/Sprites/spr_player.yy",},
   ],
   "ResourceOrderSettings":[
     {"name":"obj_camera","order":1,"path":"objects/obj_camera/obj_camera.yy",},
@@ -25,5 +28,10 @@
     {"name":"tutorial","order":1,"path":"rooms/tutorial/tutorial.yy",},
     {"name":"spr_player_parado","order":2,"path":"sprites/spr_player_parado/spr_player_parado.yy",},
     {"name":"spr_life","order":3,"path":"sprites/spr_life/spr_life.yy",},
+    {"name":"snd_esc","order":1,"path":"sounds/snd_esc/snd_esc.yy",},
+    {"name":"snd_menu","order":2,"path":"sounds/snd_menu/snd_menu.yy",},
+    {"name":"snd_soundtrack","order":3,"path":"sounds/snd_soundtrack/snd_soundtrack.yy",},
+    {"name":"idle","order":3,"path":"sprites/idle/idle.yy",},
+    {"name":"Sprite2","order":2,"path":"sprites/Sprite2/Sprite2.yy",},
   ],
 }

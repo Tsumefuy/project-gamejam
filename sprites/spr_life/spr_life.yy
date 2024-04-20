@@ -32,8 +32,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Sprites Player",
-    "path":"folders/Sprites/Sprites Player.yy",
+    "name":"spr_player",
+    "path":"folders/Sprites/spr_player.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

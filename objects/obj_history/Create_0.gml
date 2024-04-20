@@ -22,6 +22,6 @@ slice = 0;
 length = string_length(text[0]);
 list_length = array_length(text);
 indice = 1;
-vel = 0.2;
+vel = 0.5;
 alpha = 1;
 trasition=false; 

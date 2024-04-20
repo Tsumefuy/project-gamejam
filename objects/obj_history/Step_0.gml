@@ -21,6 +21,7 @@ if (trasition)
 	if (alpha <= -2)
 	{
 		draw_set_alpha(1);
+		audio_stop_sound(snd_soundtrack);
 		room_goto(Room3);
 	}
 	else alpha -= 0.01;

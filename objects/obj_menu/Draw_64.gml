@@ -9,12 +9,11 @@ if (state == 1 or state == 1.1) {
 	draw_set_alpha(alpha);
 	draw_set_color(c_black);
 	
-	draw_text_transformed(_gui_largura/2, _gui_altura/2, "DrawEraser", 0.75, 0.75, 0);
-	draw_text_transformed(_gui_largura/2, _gui_altura/2+50, "Por equipe Phoenix", 0.2, 0.2, 0);
+	draw_text_transformed(_gui_largura/2, _gui_altura/2+50, "DrawEraser", 0.75, 0.75, 0);
+	draw_text_transformed(_gui_largura/2, _gui_altura/2+150, "Por equipe Phoenix", 0.2, 0.2, 0);
 	
 	if (view_press_enter) {
 		draw_text_transformed_color(_gui_largura/2, _gui_altura-50, press_enter, 0.2, 0.2, 0, c_red, c_red, c_red, c_red, alpha);
-		//draw_text_with_shadow(press_enter, _gui_largura/2, _gui_altura - 50, 0, 5, 0.2, c_red);
 	}
 } else if (state == 2) {
 	draw_set_halign(fa_center);

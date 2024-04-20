@@ -18,6 +18,7 @@ hspd = lengthdir_x(spd * _teclas, dir);
 vspd = lengthdir_y(spd * _teclas, dir);
 
 
+
 #endregion
 
 #region COLISÃO

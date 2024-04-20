@@ -9,6 +9,7 @@
     {"name":"Fontes","order":7,"path":"folders/Fontes.yy",},
     {"name":"Linhas do tempo","order":8,"path":"folders/Linhas do tempo.yy",},
     {"name":"Objetos","order":9,"path":"folders/Objetos.yy",},
+    {"name":"Objetos Player","order":2,"path":"folders/Objetos/Objetos Player.yy",},
     {"name":"Particle Systems","order":15,"path":"folders/Particle Systems.yy",},
     {"name":"Scripts","order":5,"path":"folders/Scripts.yy",},
     {"name":"Sequências","order":11,"path":"folders/Sequências.yy",},
@@ -20,6 +21,7 @@
   ],
   "ResourceOrderSettings":[
     {"name":"obj_wall","order":1,"path":"objects/obj_wall/obj_wall.yy",},
+    {"name":"obj_camera","order":1,"path":"objects/obj_camera/obj_camera.yy",},
     {"name":"tutorial","order":1,"path":"rooms/tutorial/tutorial.yy",},
     {"name":"spr_player_parado","order":2,"path":"sprites/spr_player_parado/spr_player_parado.yy",},
   ],

@@ -32,7 +32,6 @@ if state == 1 && keyboard_check_pressed(vk_enter) {
 	
 	if keyboard_check_pressed(vk_enter) and index == 0 {
 		audio_play_sound(snd_enter, 10, false);
-		audio_stop_sound(snd_soundtrack);
 		room_goto(context);
 	} else if keyboard_check_pressed(vk_enter) and index == 1 {
 		audio_play_sound(snd_enter, 10, false);

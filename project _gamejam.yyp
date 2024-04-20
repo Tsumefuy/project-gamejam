@@ -19,6 +19,11 @@
     {"$GMFolder":"","%Name":"Fontes","folderPath":"folders/Fontes.yy","name":"Fontes","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Linhas do tempo","folderPath":"folders/Linhas do tempo.yy","name":"Linhas do tempo","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objetos","folderPath":"folders/Objetos.yy","name":"Objetos","resourceType":"GMFolder","resourceVersion":"2.0",},
+<<<<<<< HEAD
+    {"$GMFolder":"","%Name":"Objetos Cenario","folderPath":"folders/Objetos/Objetos Cenario.yy","name":"Objetos Cenario","resourceType":"GMFolder","resourceVersion":"2.0",},
+=======
+    {"$GMFolder":"","%Name":"Objetos inimigos","folderPath":"folders/Objetos/Objetos inimigos.yy","name":"Objetos inimigos","resourceType":"GMFolder","resourceVersion":"2.0",},
+>>>>>>> 3277b52288a4f20c2447a243e033f1b9f8236cf7
     {"$GMFolder":"","%Name":"Objetos Player","folderPath":"folders/Objetos/Objetos Player.yy","name":"Objetos Player","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Particle Systems","folderPath":"folders/Particle Systems.yy","name":"Particle Systems","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Scripts","folderPath":"folders/Scripts.yy","name":"Scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -28,8 +33,8 @@
     {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"backgrounds","folderPath":"folders/Sprites/backgrounds.yy","name":"backgrounds","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"spr_menu","folderPath":"folders/Sprites/spr_menu.yy","name":"spr_menu","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Sprites Player","folderPath":"folders/Sprites/Sprites Player.yy","name":"Sprites Player","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sprites Cenario","folderPath":"folders/Sprites/Sprites Cenario.yy","name":"Sprites Cenario","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Sprites Player","folderPath":"folders/Sprites/Sprites Player.yy","name":"Sprites Player","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "IncludedFiles":[],
   "isEcma":false,
@@ -40,28 +45,46 @@
   "name":"project _gamejam",
   "resources":[
     {"id":{"name":"fnt_jogo","path":"fonts/fnt_jogo/fnt_jogo.yy",},},
+<<<<<<< HEAD
+    {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
+    {"id":{"name":"obj_history","path":"objects/obj_history/obj_history.yy",},},
     {"id":{"name":"obj_menu","path":"objects/obj_menu/obj_menu.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
-    {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
+    {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
+=======
+    {"id":{"name":"obj_history","path":"objects/obj_history/obj_history.yy",},},
+    {"id":{"name":"obj_menu","path":"objects/obj_menu/obj_menu.yy",},},
+    {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
+    {"id":{"name":"obj_enemy_basic","path":"objects/obj_enemy_basic/obj_enemy_basic.yy",},},
+>>>>>>> 3277b52288a4f20c2447a243e033f1b9f8236cf7
     {"id":{"name":"context","path":"rooms/context/context.yy",},},
     {"id":{"name":"menu","path":"rooms/menu/menu.yy",},},
     {"id":{"name":"tutorial","path":"rooms/tutorial/tutorial.yy",},},
+    {"id":{"name":"player_states","path":"scripts/player_states/player_states.yy",},},
     {"id":{"name":"snd_enter","path":"sounds/snd_enter/snd_enter.yy",},},
     {"id":{"name":"snd_esc","path":"sounds/snd_esc/snd_esc.yy",},},
     {"id":{"name":"snd_menu","path":"sounds/snd_menu/snd_menu.yy",},},
     {"id":{"name":"snd_soundtrack","path":"sounds/snd_soundtrack/snd_soundtrack.yy",},},
     {"id":{"name":"idle","path":"sprites/idle/idle.yy",},},
+<<<<<<< HEAD
+    {"id":{"name":"spr_player_walk","path":"sprites/spr_player_walk/spr_player_walk.yy",},},
+    {"id":{"name":"spr_life","path":"sprites/spr_life/spr_life.yy",},},
+    {"id":{"name":"spr_logo","path":"sprites/spr_logo/spr_logo.yy",},},
+    {"id":{"name":"spr_player_idle","path":"sprites/spr_player_idle/spr_player_idle.yy",},},
+    {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},},
+=======
+    {"id":{"name":"spr_life","path":"sprites/spr_life/spr_life.yy",},},
     {"id":{"name":"spr_logo","path":"sprites/spr_logo/spr_logo.yy",},},
     {"id":{"name":"spr_paperBlack","path":"sprites/spr_paperBlack/spr_paperBlack.yy",},},
-    {"id":{"name":"spr_player_idle","path":"sprites/spr_player_idle/spr_player_idle.yy",},},
+>>>>>>> 3277b52288a4f20c2447a243e033f1b9f8236cf7
     {"id":{"name":"Sprite2","path":"sprites/Sprite2/Sprite2.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"tutorial","path":"rooms/tutorial/tutorial.yy",},},
     {"roomId":{"name":"menu","path":"rooms/menu/menu.yy",},},
     {"roomId":{"name":"context","path":"rooms/context/context.yy",},},
-    {"roomId":{"name":"tutorial","path":"rooms/tutorial/tutorial.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

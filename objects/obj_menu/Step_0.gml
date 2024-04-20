@@ -16,7 +16,6 @@ if state == 1 && keyboard_check_pressed(vk_enter) {
 } else if state == 1.1 {
 	if alpha > 0.0 {
 		alpha -= 0.01;
-		show_debug_message(alpha);
 	} else {
 		state=2;
 		index=0;
@@ -34,7 +33,7 @@ if state == 1 && keyboard_check_pressed(vk_enter) {
 	if keyboard_check_pressed(vk_enter) and index == 0 {
 		audio_play_sound(snd_enter, 10, false);
 		audio_stop_sound(snd_soundtrack);
-		room_goto(Context);
+		room_goto(context);
 	} else if keyboard_check_pressed(vk_enter) and index == 1 {
 		audio_play_sound(snd_enter, 10, false);
 		index = 0;

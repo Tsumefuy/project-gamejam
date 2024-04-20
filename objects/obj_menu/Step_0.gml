@@ -53,24 +53,25 @@ if state == 1 && keyboard_check_pressed(vk_enter) {
 	}
 	
 	if keyboard_check_pressed(vk_left) or keyboard_check_pressed(ord("A")) {
-		audio_play_sound(snd_menu, 10, false);
+		//audio_play_sound(snd_menu, 10, false);
+		
 		global.s_values[index] -= 0.1;
 		global.s_values[index] = in_range(global.s_values[index], 0, 1);
 		
-		audio_sound_gain(music, global.s_values[0], 0);
+		/*audio_sound_gain(music, global.s_values[0], 0);
 		audio_sound_gain(snd_esc, global.s_values[1], 0);
 		audio_sound_gain(snd_menu, global.s_values[1], 0);
-		audio_sound_gain(snd_enter, global.s_values[1], 0);
+		audio_sound_gain(snd_enter, global.s_values[1], 0);*/
 	} else if keyboard_check_pressed(vk_right) or keyboard_check_pressed(ord("D")) {
-		audio_play_sound(snd_menu, 10, false);
+		//audio_play_sound(snd_menu, 10, false);
 
 		global.s_values[index] += 0.1;
 		global.s_values[index] = in_range(global.s_values[index], 0, 1);
 		
-		audio_sound_gain(music, global.s_values[0], 0);
+		/*audio_sound_gain(music, global.s_values[0], 0);
 		audio_sound_gain(snd_esc, global.s_values[1], 0);
 		audio_sound_gain(snd_menu, global.s_values[1], 0);
-		audio_sound_gain(snd_enter, global.s_values[1], 0);
+		audio_sound_gain(snd_enter, global.s_values[1], 0);*/
 	}
 	
 	index = in_range(index, 0, configs_ops_length-1)

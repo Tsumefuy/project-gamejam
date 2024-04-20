@@ -16,6 +16,7 @@
     {"name":"Sons","order":3,"path":"folders/Sons.yy",},
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
     {"name":"backgrounds","order":2,"path":"folders/Sprites/backgrounds.yy",},
+    {"name":"spr_menu","order":3,"path":"folders/Sprites/spr_menu.yy",},
     {"name":"spr_player","order":1,"path":"folders/Sprites/spr_player.yy",},
   ],
   "ResourceOrderSettings":[],

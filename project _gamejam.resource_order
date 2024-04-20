@@ -26,5 +26,6 @@
     {"name":"snd_soundtrack","order":3,"path":"sounds/snd_soundtrack/snd_soundtrack.yy",},
     {"name":"idle","order":3,"path":"sprites/idle/idle.yy",},
     {"name":"Sprite2","order":2,"path":"sprites/Sprite2/Sprite2.yy",},
+    {"name":"Sprite5","order":1,"path":"sprites/Sprite5/Sprite5.yy",},
   ],
 }

@@ -9,6 +9,7 @@
     {"name":"Fontes","order":7,"path":"folders/Fontes.yy",},
     {"name":"Linhas do tempo","order":8,"path":"folders/Linhas do tempo.yy",},
     {"name":"Objetos","order":9,"path":"folders/Objetos.yy",},
+    {"name":"Objetos inimigos","order":3,"path":"folders/Objetos/Objetos inimigos.yy",},
     {"name":"Objetos Player","order":1,"path":"folders/Objetos/Objetos Player.yy",},
     {"name":"Particle Systems","order":15,"path":"folders/Particle Systems.yy",},
     {"name":"Scripts","order":5,"path":"folders/Scripts.yy",},

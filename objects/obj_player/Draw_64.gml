@@ -1,1 +1,1 @@
-draw_sprite(spr_life, life, 0, 0);
+draw_sprite_ext(spr_life, life, 0, 0, 0.3, 0.3, 0, c_white, 1);

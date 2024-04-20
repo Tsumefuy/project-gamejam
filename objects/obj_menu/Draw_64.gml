@@ -24,7 +24,7 @@ if (state == 1) {
 			draw_text_with_shadow(options[_d_index], _gui_largura/2, (_gui_altura - 100)/2 + _compense, 0, 5, 0.2, c_black);
 		}
 	
-	draw_sprite_ext(spr_logo, 0, (_gui_largura/2), _gui_altura - 20, 0.2, 0.2, 0, c_black, 2);
+	draw_sprite_ext(spr_logo, 0, (_gui_largura/2), _gui_altura - 10, 0.2, 0.2, 0, c_black, 2);
 		
 	}
 } else if (state == 3) {

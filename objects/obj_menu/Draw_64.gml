@@ -3,14 +3,18 @@ var _gui_altura = display_get_gui_height();
 draw_set_font(fnt_jogo);
 draw_set_valign(fa_middle);
 
-if (state == 1) {
+if (state == 1 or state == 1.1) {
 	draw_set_halign(fa_center);
 	
-	draw_text_with_shadow("DrawEraser", _gui_largura/2, _gui_altura/2, 0, 5, 0.75, c_black);
-	draw_text_with_shadow("Por equipe Phoenix", _gui_largura/2, _gui_altura/2+50, 0, 5, 0.2, c_black);
+	draw_set_alpha(alpha);
+	draw_set_color(c_black);
+	
+	draw_text_transformed(_gui_largura/2, _gui_altura/2, "DrawEraser", 0.75, 0.75, 0);
+	draw_text_transformed(_gui_largura/2, _gui_altura/2+50, "Por equipe Phoenix", 0.2, 0.2, 0);
 	
 	if (view_press_enter) {
-		draw_text_with_shadow(press_enter, _gui_largura/2, _gui_altura - 50, 0, 5, 0.2, c_red);
+		draw_text_transformed_color(_gui_largura/2, _gui_altura-50, press_enter, 0.2, 0.2, 0, c_red, c_red, c_red, c_red, alpha);
+		//draw_text_with_shadow(press_enter, _gui_largura/2, _gui_altura - 50, 0, 5, 0.2, c_red);
 	}
 } else if (state == 2) {
 	draw_set_halign(fa_center);

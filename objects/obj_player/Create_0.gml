@@ -7,5 +7,7 @@ life=7;
 
 dash_dir = 0;
 dash_force = 15.00;
+direct = 1;
+distance = 0;
 
 state = player_states_free;

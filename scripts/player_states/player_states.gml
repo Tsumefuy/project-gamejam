@@ -15,6 +15,12 @@ function player_states_free() {
 
 	hspd = lengthdir_x(spd * _teclas, dir);
 	vspd = lengthdir_y(spd * _teclas, dir);
+	if (hspd > 0) {
+		obj_player.direct = 1;
+	} else if (hspd < 0){
+		obj_player.direct = -1;
+		show_debug_message(obj_player.direct);
+	}
 	
 	if (_tecla_space) {
 		hspd = 0;
@@ -25,6 +31,12 @@ function player_states_free() {
 }
 
 function player_states_dash() {
-
+	if (distance < 20) {
+		hspd = spd * 2 * obj_player.direct;
+		distance++;
+	} else {
+		distance = 0;
+		state=player_states_free;
+	}
 }
 

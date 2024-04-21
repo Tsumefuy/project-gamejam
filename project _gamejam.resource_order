@@ -31,9 +31,11 @@
     {"name":"snd_menu","order":2,"path":"sounds/snd_menu/snd_menu.yy",},
     {"name":"snd_soundtrack","order":3,"path":"sounds/snd_soundtrack/snd_soundtrack.yy",},
     {"name":"idle","order":3,"path":"sprites/idle/idle.yy",},
+    {"name":"spr_player_dash","order":3,"path":"sprites/spr_player_dash/spr_player_dash.yy",},
     {"name":"spr_player_idle","order":1,"path":"sprites/spr_player_idle/spr_player_idle.yy",},
     {"name":"spr_player_walk","order":2,"path":"sprites/spr_player_walk/spr_player_walk.yy",},
     {"name":"spr_wall","order":2,"path":"sprites/spr_wall/spr_wall.yy",},
+    {"name":"spr_player_atack1","order":4,"path":"sprites/spr_player_atack1/spr_player_atack1.yy",},
     {"name":"Sprite2","order":2,"path":"sprites/Sprite2/Sprite2.yy",},
   ],
 }

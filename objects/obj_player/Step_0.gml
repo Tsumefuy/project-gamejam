@@ -1,5 +1,9 @@
 state();
 
+/*if (direct == 359) {
+	direct = -1;
+}*/
+
 #region COLISÃO
 
 if (place_meeting(x+hspd, y, obj_wall)) {

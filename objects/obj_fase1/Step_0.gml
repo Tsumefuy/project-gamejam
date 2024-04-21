@@ -1,7 +1,14 @@
-if (current_time-time_init >= 30000) {
+time_current = current_time-time_init;
+
+if (time_current >= 30000) {
 	room_goto(re_end);
 }
-if (global.index_borracha <= number_max_borracha) {
-	instance_create_layer(random_range(0, 1526)+50, random_range(-224, -400), "Instances_NPCs", obj_borracha_vermelha);
-	global.index_borracha++;
+
+for (var i = 0; i <= 7; i++) {
+	if (!instance_exists(borrachas[i])) {
+		instance_create_layer(random_range(0, room_width-sprite_width/2), random_range(-224, -400), "Instances_NPCs", borrachas[i]);
+	}
 }
+
+
+

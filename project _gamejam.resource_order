@@ -24,6 +24,13 @@
   ],
   "ResourceOrderSettings":[
     {"name":"obj_borracha_vermelha","order":1,"path":"objects/obj_borracha_vermelha/obj_borracha_vermelha.yy",},
+    {"name":"obj_borracha_vermelha2","order":2,"path":"objects/obj_borracha_vermelha2/obj_borracha_vermelha2.yy",},
+    {"name":"obj_borracha_vermelha3","order":3,"path":"objects/obj_borracha_vermelha3/obj_borracha_vermelha3.yy",},
+    {"name":"obj_borracha_vermelha4","order":4,"path":"objects/obj_borracha_vermelha4/obj_borracha_vermelha4.yy",},
+    {"name":"obj_borracha_vermelha5","order":6,"path":"objects/obj_borracha_vermelha5/obj_borracha_vermelha5.yy",},
+    {"name":"obj_borracha_vermelha6","order":5,"path":"objects/obj_borracha_vermelha6/obj_borracha_vermelha6.yy",},
+    {"name":"obj_borracha_vermelha8","order":8,"path":"objects/obj_borracha_vermelha8/obj_borracha_vermelha8.yy",},
+    {"name":"obj_borracha_vermelha7","order":7,"path":"objects/obj_borracha_vermelha7/obj_borracha_vermelha7.yy",},
     {"name":"obj_caixa","order":8,"path":"objects/obj_caixa/obj_caixa.yy",},
     {"name":"obj_camera","order":4,"path":"objects/obj_camera/obj_camera.yy",},
     {"name":"obj_fase1","order":9,"path":"objects/obj_fase1/obj_fase1.yy",},

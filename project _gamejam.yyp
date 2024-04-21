@@ -43,6 +43,13 @@
   "resources":[
     {"id":{"name":"fnt_jogo","path":"fonts/fnt_jogo/fnt_jogo.yy",},},
     {"id":{"name":"obj_borracha_vermelha","path":"objects/obj_borracha_vermelha/obj_borracha_vermelha.yy",},},
+    {"id":{"name":"obj_borracha_vermelha2","path":"objects/obj_borracha_vermelha2/obj_borracha_vermelha2.yy",},},
+    {"id":{"name":"obj_borracha_vermelha3","path":"objects/obj_borracha_vermelha3/obj_borracha_vermelha3.yy",},},
+    {"id":{"name":"obj_borracha_vermelha4","path":"objects/obj_borracha_vermelha4/obj_borracha_vermelha4.yy",},},
+    {"id":{"name":"obj_borracha_vermelha5","path":"objects/obj_borracha_vermelha5/obj_borracha_vermelha5.yy",},},
+    {"id":{"name":"obj_borracha_vermelha6","path":"objects/obj_borracha_vermelha6/obj_borracha_vermelha6.yy",},},
+    {"id":{"name":"obj_borracha_vermelha8","path":"objects/obj_borracha_vermelha8/obj_borracha_vermelha8.yy",},},
+    {"id":{"name":"obj_borracha_vermelha7","path":"objects/obj_borracha_vermelha7/obj_borracha_vermelha7.yy",},},
     {"id":{"name":"obj_caixa","path":"objects/obj_caixa/obj_caixa.yy",},},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
     {"id":{"name":"obj_enemy_basic","path":"objects/obj_enemy_basic/obj_enemy_basic.yy",},},
@@ -96,8 +103,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"menu","path":"rooms/menu/menu.yy",},},
     {"roomId":{"name":"fase1","path":"rooms/fase1/fase1.yy",},},
+    {"roomId":{"name":"menu","path":"rooms/menu/menu.yy",},},
     {"roomId":{"name":"re_end","path":"rooms/re_end/re_end.yy",},},
     {"roomId":{"name":"context","path":"rooms/context/context.yy",},},
     {"roomId":{"name":"rm_tutorial","path":"rooms/rm_tutorial/rm_tutorial.yy",},},

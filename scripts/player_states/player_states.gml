@@ -6,6 +6,7 @@ function player_states_free() {
 	var _tecla_para_esq = keyboard_check(ord("A")) or keyboard_check(vk_left);
 	var _tecla_para_dir = keyboard_check(ord("D")) or keyboard_check(vk_right);
 	var _tecla_space = keyboard_check_pressed(vk_space);
+	var _tecla_atack = keyboard_check_pressed(ord("C"));
 	
 	#endregion
 	
@@ -19,7 +20,17 @@ function player_states_free() {
 		obj_player.direct = 1;
 	} else if (hspd < 0){
 		obj_player.direct = -1;
-		show_debug_message(obj_player.direct);
+	}
+	
+	if (_tecla_atack) {
+		hspd = 0;
+		vspd = 0;
+		if (combo < lenght_atacks and current_time-last_atack<=inter_atack) {
+			combo++;
+		} else {
+			combo = 1;
+		}
+		state = player_states_atack;
 	}
 	
 	if (_tecla_space) {
@@ -37,6 +48,18 @@ function player_states_dash() {
 	} else {
 		distance = 0;
 		state=player_states_free;
+	}
+}
+
+function player_states_atack() {
+	instance = collision_circle(x+(50*direct), y, 20, obj_enemy_basic, false, false);
+	if (instance != noone) {
+		instance.life--;
+	}
+	
+	if (image_index > image_number - 0.3) {
+		state = player_states_free;
+		last_atack=current_time;
 	}
 }
 

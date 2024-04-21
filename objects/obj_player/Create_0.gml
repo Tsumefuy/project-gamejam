@@ -11,3 +11,12 @@ direct = 1;
 distance = 0;
 
 state = player_states_free;
+
+atacks = [spr_player_atack1, spr_player_atack2];
+lenght_atacks = array_length(atacks);
+combo = 0;
+
+image_speed = 1;
+
+last_atack = current_time;
+inter_atack = 500;

@@ -57,7 +57,8 @@ function player_states_atack() {
 		instance = collision_circle(x+(50*direct), y, 20, obj_enemy_basic, false, false);
 		if (instance != noone) {
 			atacked = true;
-			instance.life--;
+			instance.hited = true;
+			instance.life -= combo;
 		}
 	}
 }

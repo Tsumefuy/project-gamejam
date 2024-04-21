@@ -25,11 +25,11 @@ switch (state) {
 	case player_states_free:
 		image_speed = 1.5;
 		if (hspd == 0 and vspd == 0) {
-			sprite_index = spr_player_idle;
+			sprite_index = spr_player_idle_lapis;
 		} else if (hspd != 0 or vspd != 0) {
 			if (hspd > 0) image_xscale = 0.25;
 			else if (hspd < 0) image_xscale = -0.25;
-			sprite_index = spr_player_walk; 
+			sprite_index = spr_player_walk_lapis; 
 		}
 	break;
 	case player_states_dash:
@@ -43,6 +43,7 @@ switch (state) {
 		show_debug_message(image_index);
 		if (image_index >= _img_number) {
 			state = player_states_free;
+			atacked = false;
 			last_atack=current_time;
 		}
 	break;

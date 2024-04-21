@@ -23,7 +23,7 @@
   ],
   "name":"spr_logo",
   "nineSlice":null,
-  "origin":7,
+  "origin":4,
   "parent":{
     "name":"spr_menu",
     "path":"folders/Sprites/spr_menu.yy",
@@ -76,7 +76,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":180,
-    "yorigin":394,
+    "yorigin":197,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

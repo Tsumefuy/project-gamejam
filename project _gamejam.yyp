@@ -28,8 +28,8 @@
     {"$GMFolder":"","%Name":"Sons","folderPath":"folders/Sons.yy","name":"Sons","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"backgrounds","folderPath":"folders/Sprites/backgrounds.yy","name":"backgrounds","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"spr_inimigos","folderPath":"folders/Sprites/spr_inimigos.yy","name":"spr_inimigos","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"spr_cenario","folderPath":"folders/Sprites/spr_cenario.yy","name":"spr_cenario","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"spr_inimigos","folderPath":"folders/Sprites/spr_inimigos.yy","name":"spr_inimigos","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"spr_menu","folderPath":"folders/Sprites/spr_menu.yy","name":"spr_menu","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"spr_player","folderPath":"folders/Sprites/spr_player.yy","name":"spr_player","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
@@ -42,6 +42,7 @@
   "name":"project _gamejam",
   "resources":[
     {"id":{"name":"fnt_jogo","path":"fonts/fnt_jogo/fnt_jogo.yy",},},
+    {"id":{"name":"obj_borracha_vermelha","path":"objects/obj_borracha_vermelha/obj_borracha_vermelha.yy",},},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
     {"id":{"name":"obj_enemy_basic","path":"objects/obj_enemy_basic/obj_enemy_basic.yy",},},
     {"id":{"name":"obj_history","path":"objects/obj_history/obj_history.yy",},},
@@ -51,7 +52,7 @@
     {"id":{"name":"obj_tutorial","path":"objects/obj_tutorial/obj_tutorial.yy",},},
     {"id":{"name":"obj_wall_visible","path":"objects/obj_wall_visible/obj_wall_visible.yy",},},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
-    {"id":{"name":"obj_borracha_vermelha","path":"objects/obj_borracha_vermelha/obj_borracha_vermelha.yy",},},
+    {"id":{"name":"obj_caixa","path":"objects/obj_caixa/obj_caixa.yy",},},
     {"id":{"name":"context","path":"rooms/context/context.yy",},},
     {"id":{"name":"fase1","path":"rooms/fase1/fase1.yy",},},
     {"id":{"name":"menu","path":"rooms/menu/menu.yy",},},
@@ -88,10 +89,10 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"fase1","path":"rooms/fase1/fase1.yy",},},
     {"roomId":{"name":"rm_tutorial","path":"rooms/rm_tutorial/rm_tutorial.yy",},},
     {"roomId":{"name":"menu","path":"rooms/menu/menu.yy",},},
     {"roomId":{"name":"context","path":"rooms/context/context.yy",},},
+    {"roomId":{"name":"fase1","path":"rooms/fase1/fase1.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

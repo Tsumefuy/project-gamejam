@@ -20,3 +20,31 @@ if (place_meeting(x, y+vspd, obj_wall)) {
 
 x += hspd;
 y += vspd;
+
+switch (state) {
+	case player_states_free:
+		image_speed = 1.5;
+		if (hspd == 0 and vspd == 0) {
+			sprite_index = spr_player_idle;
+		} else if (hspd != 0 or vspd != 0) {
+			if (hspd > 0) image_xscale = 0.25;
+			else if (hspd < 0) image_xscale = -0.25;
+			sprite_index = spr_player_walk; 
+		}
+	break;
+	case player_states_dash:
+		sprite_index = spr_player_dash;
+	break;
+	case player_states_atack:
+		var _img_number = 5;
+		image_speed = 1.2;
+		sprite_index = attacks[combo-1];
+		if (combo-1 == 0 or combo-1 == 2) _img_number = 7.5; 
+		show_debug_message(image_index);
+		if (image_index >= _img_number) {
+			state = player_states_free;
+			last_atack=current_time;
+		}
+	break;
+}
+

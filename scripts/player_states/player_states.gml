@@ -23,6 +23,7 @@ function player_states_free() {
 	}
 	
 	if (_tecla_atack) {
+		image_index = 0;
 		hspd = 0;
 		vspd = 0;
 		if (combo < lenght_atacks and current_time-last_atack<=inter_atack) {
@@ -55,11 +56,6 @@ function player_states_atack() {
 	instance = collision_circle(x+(50*direct), y, 20, obj_enemy_basic, false, false);
 	if (instance != noone) {
 		instance.life--;
-	}
-	
-	if (image_index > image_number - 0.3) {
-		state = player_states_free;
-		last_atack=current_time;
 	}
 }
 

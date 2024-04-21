@@ -1,5 +1,5 @@
 global.index_borracha = 1;
-number_max_borracha = 8;
+number_max_borracha = 4;
 pos=0;
 start_timer = true;
 timer = -1;

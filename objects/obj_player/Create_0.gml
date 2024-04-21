@@ -20,6 +20,8 @@ image_speed = 1;
 image_yscale = 0.25;
 image_xscale = 0.25;
 
+equiped = false;
+
 last_atack = current_time;
 inter_atack = 500;
 

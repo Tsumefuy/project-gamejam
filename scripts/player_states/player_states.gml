@@ -22,7 +22,7 @@ function player_states_free() {
 		obj_player.direct = -1;
 	}
 	
-	if (_tecla_atack) {
+	if (_tecla_atack and equiped) {
 		image_index = 0;
 		hspd = 0;
 		vspd = 0;

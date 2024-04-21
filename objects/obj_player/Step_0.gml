@@ -25,11 +25,19 @@ switch (state) {
 	case player_states_free:
 		image_speed = 1.5;
 		if (hspd == 0 and vspd == 0) {
-			sprite_index = spr_player_idle_lapis;
+			if (equiped) {
+				sprite_index = spr_player_idle_lapis;
+			} else {
+				sprite_index = spr_player_idle;
+			}
 		} else if (hspd != 0 or vspd != 0) {
 			if (hspd > 0) image_xscale = 0.25;
 			else if (hspd < 0) image_xscale = -0.25;
-			sprite_index = spr_player_walk_lapis; 
+			if (equiped) {
+				sprite_index = spr_player_walk_lapis; 
+			} else {
+				sprite_index = spr_player_walk;
+			}
 		}
 	break;
 	case player_states_dash:

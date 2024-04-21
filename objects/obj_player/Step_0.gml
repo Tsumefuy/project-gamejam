@@ -40,7 +40,6 @@ switch (state) {
 		image_speed = 1.2;
 		sprite_index = attacks[combo-1];
 		if (combo-1 == 0 or combo-1 == 2) _img_number = 7.5; 
-		show_debug_message(image_index);
 		if (image_index >= _img_number) {
 			state = player_states_free;
 			atacked = false;

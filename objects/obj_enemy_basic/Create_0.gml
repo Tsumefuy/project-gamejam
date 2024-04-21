@@ -7,5 +7,8 @@ h_compense = 390*l_scale;
 w_compense = 580*l_scale;
 hited=false;
 alpha=1;
+alpha2=1;
 triger_hit=false;
-
+tic=0;
+triger_tic=false;
+up=false;

@@ -12,7 +12,7 @@ distance = 0;
 
 state = player_states_free;
 
-atacks = [spr_player_atack1, spr_player_atack2];
+atacks = [spr_player_atack1, spr_player_atack2, spr_player_atack3];
 lenght_atacks = array_length(atacks);
 combo = 0;
 

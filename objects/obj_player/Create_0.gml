@@ -25,4 +25,6 @@ equiped = false;
 last_atack = current_time;
 inter_atack = 500;
 
+alpha = 0;
+
 atacked = false;

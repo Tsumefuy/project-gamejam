@@ -64,6 +64,6 @@ y += vspd;
 	}
 	show_debug_message(image_index);
 	if (image_index >= 16.5) {
-		room_goto(menu);
+		room_goto(fase1);
 	}
 }

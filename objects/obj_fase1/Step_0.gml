@@ -1,3 +1,6 @@
+if (current_time-time_init >= 30000) {
+	room_goto(re_end);
+}
 if (global.index_borracha <= number_max_borracha) {
 	switch (global.index_borracha) {
 		

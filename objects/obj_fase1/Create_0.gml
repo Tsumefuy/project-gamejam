@@ -3,3 +3,4 @@ number_max_borracha = 8;
 pos=0;
 start_timer = true;
 timer = -1;
+time_init = current_time;

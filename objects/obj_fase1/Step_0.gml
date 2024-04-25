@@ -1,6 +1,6 @@
 time_current = current_time-time_init;
 
-if (time_current >= 30000) {
+if (time_current >= 30000 and instance_exists(obj_player)) {
 	room_goto(re_end);
 }
 

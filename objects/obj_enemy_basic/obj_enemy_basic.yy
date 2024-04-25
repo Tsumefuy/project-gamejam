@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_logo",
-    "path":"sprites/spr_logo/spr_logo.yy",
+    "name":"spr_borracha_branca_att",
+    "path":"sprites/spr_borracha_branca_att/spr_borracha_branca_att.yy",
   },
   "spriteMaskId":null,
   "visible":true,

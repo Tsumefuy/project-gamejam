@@ -1,4 +1,5 @@
-if (life <= 0) {
+if (life == 0) {
+	mask_index = spr_empty;
 	if (tic <= 3) {
 		if (not up) {
 			alpha = 0.5;

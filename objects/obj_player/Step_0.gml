@@ -71,3 +71,4 @@ if (global.player_life > 0) {
 	
 	if (image_index >= 15.2) instance_destroy();
 }
+

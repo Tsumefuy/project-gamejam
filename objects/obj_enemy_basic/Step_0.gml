@@ -1,4 +1,5 @@
 if (life == 0) {
+	hited=false;
 	mask_index = spr_empty;
 	if (tic <= 3) {
 		if (not up) {

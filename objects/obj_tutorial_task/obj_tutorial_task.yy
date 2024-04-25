@@ -10,8 +10,8 @@
   "name":"obj_tutorial_task",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos Player",
-    "path":"folders/Objetos/Objetos Player.yy",
+    "name":"Objetos",
+    "path":"folders/Objetos.yy",
   },
   "parentObjectId":null,
   "persistent":false,

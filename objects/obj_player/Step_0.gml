@@ -21,8 +21,9 @@ if (place_meeting(x, y+vspd, obj_wall)) {
 x += hspd;
 y += vspd;
 
-	if (life > 0) {
+if (global.player_life > 0) {
 	switch (state) {
+		
 		case player_states_free:
 			image_speed = 1.5;
 			if (hspd == 0 and vspd == 0) {
@@ -41,9 +42,11 @@ y += vspd;
 				}
 			}
 		break;
+		
 		case player_states_dash:
 			sprite_index = spr_player_dash;
 		break;
+		
 		case player_states_atack:
 			var _img_number = 5;
 			image_speed = 1.2;
@@ -57,13 +60,14 @@ y += vspd;
 		break;
 	}
 } else {
+	state = player_states_death;
+	
+	image_speed = 1;
 	if (equiped) {
 		sprite_index = spr_player_death_lapis;
 	} else {
 		sprite_index = spr_player_death;
 	}
-	show_debug_message(image_index);
-	if (image_index >= 16.5) {
-		room_goto(fase1);
-	}
+	
+	if (image_index >= 15.2) instance_destroy();
 }

@@ -11,8 +11,8 @@
   "name":"obj_camera",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"Objetos Player",
+    "path":"folders/Objetos/Objetos Player.yy",
   },
   "parentObjectId":null,
   "persistent":false,

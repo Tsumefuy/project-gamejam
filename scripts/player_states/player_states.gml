@@ -10,7 +10,7 @@ function player_states_free() {
 	
 	#endregion
 	
-	var _teclas = _tecla_para_dir - _tecla_para_esq != 0 or _tecla_para_baixo - _tecla_para_cima != 0;
+	_teclas = _tecla_para_dir - _tecla_para_esq != 0 or _tecla_para_baixo - _tecla_para_cima != 0;
 
 	dir = point_direction(0,0, _tecla_para_dir - _tecla_para_esq, _tecla_para_baixo - _tecla_para_cima);
 
@@ -63,3 +63,8 @@ function player_states_atack() {
 	}
 }
 
+function player_states_death() {
+	hspd = 0;
+	vspd = 0;
+	death = true;
+}

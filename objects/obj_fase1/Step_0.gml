@@ -4,11 +4,17 @@ if (time_current >= 30000) {
 	room_goto(re_end);
 }
 
-for (var i = 0; i <= 7; i++) {
-	if (!instance_exists(obj_borracha_vermelha)) {
-		instance_create_layer(random_range(0, room_width-sprite_width/2), random_range(-224, -400), "Instances_NPCs", obj_borracha_vermelha);
+if (faded) {
+	if (global.player_life != 0) {
+		while (global.quant_borrachas < max_quant_borrachas) {
+			instance_create_layer(random_range(0, 1156), random_range(-300, -400), "Instances_NPCs", obj_borracha_vermelha);
+			global.quant_borrachas++;
+		}
 	}
 }
+
+
+
 
 
 
